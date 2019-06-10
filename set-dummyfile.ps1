@@ -1,9 +1,9 @@
 function Set-DummyFile {
     param (
-        [string]$name, 
-        [string]$destination,
-        [Int]$size,
-        [Int]$number
+        [string]$name="dummy", 
+        [Parameter(Mandatory=$true)][string]$destination,
+        [Int]$size=1,
+        [Int]$number=1
     )
     
     Process{
